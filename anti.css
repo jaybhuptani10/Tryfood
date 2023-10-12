@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.page-1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.page-2{
+    min-height: 100vh;
+    width: 100%;
+}
+html,body{
+  
+    
+  
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.food-menu{
+    padding: 50px;
+    position: absolute;
+    background-color: rgba(38, 39, 39, 0.4);
+    margin-top: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 170vh;
+    width: 50vw;
+    border: 4px solid wheat;
+}
+
+.food-menu ul li{
+    position: relative;
+    list-style: none;
+    color: white;
+    font-size: 1.8vw;
+    line-height: 3vw;
+    
+    cursor: pointer;
+}
+.food-menu ul li .sub{
+    z-index: 10;
+    display: none;
+    color: red;
+    height: 10vw;
+    width: 10vw;
+    background-color: rgba(240, 245, 245, 0.9);
+    position: absolute;
+    top: 100%; /* Position it below the li element */
+    left: 0;
+    opacity: 0; /* Hide it by default */
+    transition: opacity 0.3s;
+    
+}
+.food-menu ul li:hover .sub{
+    display: block;
+    opacity: 1;
+   
+    
+    
+}
